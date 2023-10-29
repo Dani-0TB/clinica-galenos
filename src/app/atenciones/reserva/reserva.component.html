@@ -1,0 +1,26 @@
+<h2>Disponibilidad Noviembre</h2>
+
+<div class="calendario">
+  <div class="row">
+    <div class="dia-header">L</div>
+    <div class="dia-header">Ma</div>
+    <div class="dia-header">Mi</div>
+    <div class="dia-header">J</div>
+    <div class="dia-header">V</div>
+    <div class="dia-header">S</div>
+    <div class="dia-header">D</div>
+  </div>
+  <div *ngFor="let semana of mes">
+    <div class="row">
+      <div *ngFor="let dia of semana">
+        <div *ngIf="dia.disponible" class="dia disponible">
+          {{ dia.num }}
+        </div>
+        <div *ngIf="!dia.disponible" class="dia no-disponible">
+          {{ dia.num }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<a mat-flat-button color="accent" class="btn-reserva" routerLink="exito">Reservar</a>

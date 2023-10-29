@@ -1,0 +1,39 @@
+
+<div class="container">
+  <h1>Reserva tu hora</h1>
+
+  <div class="window">
+    <h2>Busca a tu médico</h2>
+
+    <div class="busqueda">
+      <div class="b-container">
+        <h4>Seleccione especialidad</h4>
+        <mat-form-field class="form-field">
+          <mat-label>Especialidad</mat-label>
+          <mat-select [(value)]="especialidad">
+            <mat-option *ngFor="let e of especialidades" [value]="e.valor">
+              {{ e.valorVista }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="b-container" *ngIf="especialidad !== ''">
+        <h4>Seleccione Especialista</h4>
+        <mat-form-field class="form-field">
+          <mat-label>Especialistas</mat-label>
+          <mat-select [(value)]="medico">
+            <mat-option *ngFor="let m of medicos" [value]="m.valor">
+              {{ m.valorVista }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <button mat-flat-button (click)="buscar()" color="accent" class="btn" *ngIf="medico !== ''">Buscar</button>
+  </div>
+
+  <div *ngIf="busqueda" class="window">
+    <app-reserva></app-reserva>
+  </div>
+</div>

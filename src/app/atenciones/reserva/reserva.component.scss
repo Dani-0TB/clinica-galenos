@@ -1,0 +1,65 @@
+.calendario{
+  max-width: 700px;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid #c7c7c7;
+  border-radius: 3em;
+  margin: 0 auto;
+}
+
+.dia-header {
+  text-align: center;
+  padding: 0.5rem;
+  width: 30px;
+  height: 20px;
+  background-color: #b3b3b3;
+  border: 1px solid #cecece;
+  border-radius: 1rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.dia {
+  text-align: center;
+  padding: 0.5rem;
+  width: 30px;
+  height: 20px;
+  border: 1px solid #cecece;
+  border-radius: 1rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.no-disponible {
+  background-color: #f06b62;
+}
+
+.disponible {
+  background-color: #b2ff6a;
+}
+
+.disponible:hover {
+  background-color: #9bdf5b;
+}
+
+.disponible:active {
+  background-color: #8bda42;
+}
+
+.row {
+  margin-bottom: 8px;
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+.btn-reserva {
+  float: inline-end;
+  margin: 20px;
+}
