@@ -1,0 +1,22 @@
+
+  
+  .register-form {
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+  }
+
+  .window {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #ffffff;
+    max-width: 1000px;
+    min-width: 100%;
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 1rem;
+  }

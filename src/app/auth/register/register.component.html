@@ -1,0 +1,31 @@
+<div class="container">
+<div class="window">
+    <h1>Create an account</h1>
+    <form #registerForm="ngForm" class="register-form">
+      <mat-form-field>
+        <mat-label for="username" >Username</mat-label>
+        <input [(ngModel)]="registrationForm.username" matInput type="text" name="username" required>
+        <mat-error *ngIf="registerForm.invalid">Please enter a user name</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label for="email" >Email</mat-label>
+        <input [(ngModel)]="registrationForm.email" matInput type="email" name="email" required>
+        <mat-error *ngIf="registerForm.invalid">Please enter an email </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label for="password" >Pasword</mat-label>
+        <input  #password="ngModel" [(ngModel)]="registrationForm.password" 
+                matInput type="password" name="password" required>
+        <mat-error *ngIf="registerForm.invalid">Please enter a password</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label for="password2" >Confirm Pasword</mat-label>
+        <input  #password2="ngModel" [(ngModel)]="registrationForm.password2" 
+                matInput type="password" name="password2" required >
+        <mat-error *ngIf="registerForm.invalid">Please enter a password</mat-error>
+      </mat-form-field>
+      <button mat-flat-button color="accent" class="btn-login">Register</button>
+    </form>
+    <p>Already have an account? <a routerLink="/login">Sign in!</a></p>
+  </div>
+</div>
