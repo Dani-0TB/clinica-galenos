@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Llamada de pacientes</h2>
+    <table class="table">
+       <thead>
+         <tr>
+           <th>ID</th>
+           <th>Nombre</th>
+           <th>Apellido</th>
+           <th>Estado</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let paciente of pacientes">
+           <td>{{ paciente.id }}</td>
+           <td>{{ paciente.nombre }}</td>
+           <td>{{ paciente.apellido }}</td>
+           <td>{{ paciente.estado }}</td>
+         </tr>
+       </tbody>
+    </table>
