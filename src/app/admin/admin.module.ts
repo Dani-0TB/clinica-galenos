@@ -2,14 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AdminRoutingModule } from './admin-routing.module';
-import { AdminComponent } from './admin_site/admin.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  declarations: [AdminComponent, UsuariosComponent],
+  declarations: [UsuariosComponent, DashboardComponent],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    MatButtonModule
   ]
 })
 export class AdminModule { }
