@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AtencionesComponent } from './atenciones.component';
 import { ReservaExitosaComponent } from './reserva-exitosa/reserva-exitosa.component';
+import { PacienteCallComponent } from './paciente-call/paciente-call.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path:'exito',
     component: ReservaExitosaComponent
+  },
+  {
+    path:'pacienteCall',
+    component: PacienteCallComponent
   }
 ];
 
