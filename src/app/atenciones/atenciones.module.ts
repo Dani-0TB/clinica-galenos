@@ -10,13 +10,14 @@ import {MatButtonModule} from '@angular/material/button';
 import { ReservaComponent } from './reserva/reserva.component';
 import { AtencionesComponent } from './atenciones.component';
 import { ReservaExitosaComponent } from './reserva-exitosa/reserva-exitosa.component';
-
+import { PacienteCallComponent } from './paciente-call/paciente-call.component';
 
 @NgModule({
   declarations: [
     AtencionesComponent,
     ReservaComponent,
-    ReservaExitosaComponent
+    ReservaExitosaComponent,
+    PacienteCallComponent
   ],
   imports: [
     CommonModule,
